@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #0c440f;
+  background-color: #4caf50;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -18,31 +18,65 @@ header {
   margin-left: 10vw;
   margin-right: 20vw;
   font-size: medium;
-  width: 80%; /* Cambia este valor según tu preferencia */
+  width: 80%;
 }
 
 .productos {
   width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 30px; /* Aumenta el espacio entre productos */
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0; /* Añade más margen superior e inferior a cada producto */
+  display: flex; /* Hace que los elementos dentro del contenedor se distribuyan horizontalmente */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.producto p {
+  text-align: center; /* Centra el texto */
+  margin-top: 10px; /* Agrega espacio entre la imagen y el texto */
 }
 
 .carta {
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 30%;
   margin-left: 50px;
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+#lista-carta {
+  margin-top: 20px; /* Espacio superior */
+}
+
+#total {
+  font-weight: bold; /* Texto en negrita */
+}
+
+#checkout-btn,
+#clear-cart-btn {
+  width: 100%; /* Ancho completo */
 }
 
 button {
   display: block;
   margin-top: 10px;
-  background-color: #333;
-  color: #fff;
+  background-color: #4caf50;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -51,7 +85,7 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #45a049;
 }
 
 #clear-cart-btn {
