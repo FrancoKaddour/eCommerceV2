@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Blunt, Blueberry",
+    "precio": 2000,
+    "imagen": "./images/images.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Bong, Plastico duro",
+    "precio": 10000,
+    "imagen": "./images/images.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Bong, Vidrio forjado",
+    "precio": 40000,
+    "imagen": "./images/images.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Vape CBD, Garden Growshop",
+    "precio": 120000,
+    "imagen": "./images/images.jpg"
+  }
+]
