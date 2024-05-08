@@ -1,24 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+/*          -------------------------------------------           HEADER               -----------------------------------------------------           */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  padding: 5px 10%;
+}
+
+.conteiner {
+  position: relative;
+}
+
+input {
+  width: 350px;
+  padding: 10px;
+  padding-right: 35px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.conteiner button {
+  background-color: #14afb4;
+  padding: 22px;
+  position: absolute;
+  border: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 100px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .logo {
+  cursor: pointer;
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #14afb4;
+  text-decoration: none;
+}
+
+/*          -------------------------------------------             BODY               -----------------------------------------------------           */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
 }
-
-header {
-  background-color: #4caf50;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
 .contenedor {
   display: flex;
   justify-content: center;
   margin-left: 10vw;
   margin-right: 20vw;
   font-size: medium;
-  width: 80%;
 }
 
 .productos {
@@ -30,22 +102,26 @@ header {
 
 .producto {
   border: 1px solid #ccc;
-  padding: 20px;
   border-radius: 10px;
-  margin: 20px 0; /* Añade más margen superior e inferior a cada producto */
+  margin: 20px; /* Añade más margen superior e inferior a cada producto */
   display: flex; /* Hace que los elementos dentro del contenedor se distribuyan horizontalmente */
   flex-direction: column; /* Apila los elementos verticalmente */
   align-items: center; /* Centra los elementos horizontalmente */
 }
 
 .producto img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
 .producto p {
   text-align: center; /* Centra el texto */
   margin-top: 10px; /* Agrega espacio entre la imagen y el texto */
+}
+
+.producto input {
+  text-align: center; /* Centra el texto */
+  max-width: 30%;
 }
 
 .carta {
@@ -75,7 +151,7 @@ header {
 button {
   display: block;
   margin-top: 10px;
-  background-color: #4caf50;
+  background-color: #14afb4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -85,7 +161,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #979c97;
 }
 
 #clear-cart-btn {
